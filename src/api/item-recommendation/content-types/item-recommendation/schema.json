@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_recommendations",
+  "info": {
+    "singularName": "item-recommendation",
+    "pluralName": "item-recommendations",
+    "displayName": "Item Recommendation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "backgroundColour": {
+      "type": "enumeration",
+      "enum": [
+        "DarkBlue",
+        "Blue",
+        "Red",
+        "Green",
+        "Grey"
+      ],
+      "default": "Blue",
+      "required": true
+    }
+  }
+}

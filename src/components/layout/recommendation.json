@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_layout_recommendations",
+  "info": {
+    "displayName": "Recommendation",
+    "icon": "info-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "recommendationText": {
+      "type": "richtext"
+    },
+    "otherText": {
+      "type": "richtext"
+    },
+    "itemRecommendation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item-recommendation.item-recommendation"
+    },
+    "title": {
+      "type": "string",
+      "unique": false
+    },
+    "resources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resource.resource"
+    }
+  }
+}
