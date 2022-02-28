@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donation_categories",
+  "info": {
+    "singularName": "donation-category",
+    "pluralName": "donation-categories",
+    "displayName": "Donation Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "donation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::donation.donation",
+      "mappedBy": "donationCategory"
+    }
+  }
+}

@@ -14,7 +14,8 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "itemCategory": {
       "type": "relation",
@@ -40,6 +41,12 @@
       "repeatable": true,
       "component": "layout.recommendation",
       "required": true
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "items"
     }
   }
 }

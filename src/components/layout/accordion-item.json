@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_layout_accordion_items",
+  "info": {
+    "displayName": "Accordion Item",
+    "icon": "indent"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,43 +1,28 @@
 {
   "kind": "collectionType",
-  "collectionName": "resources",
+  "collectionName": "donations",
   "info": {
-    "singularName": "resource",
-    "pluralName": "resources",
-    "displayName": "Resource",
+    "singularName": "donation",
+    "pluralName": "donations",
+    "displayName": "Donation",
     "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "description": {
-      "type": "richtext",
+      "unique": true,
       "required": true
+    },
+    "address": {
+      "type": "richtext"
     },
     "url": {
       "type": "string",
       "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
-    },
-    "items": {
-      "type": "richtext"
-    },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
     },
     "coverImage": {
       "type": "media",
@@ -50,11 +35,21 @@
         "audios"
       ]
     },
-    "address": {
-      "type": "string"
+    "specifications": {
+      "type": "richtext"
     },
     "locations": {
       "type": "richtext"
+    },
+    "donationCategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::donation-category.donation-category",
+      "inversedBy": "donation"
+    },
+    "description": {
+      "type": "richtext",
+      "required": false
     }
   }
 }
