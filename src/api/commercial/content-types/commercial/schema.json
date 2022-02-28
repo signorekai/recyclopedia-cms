@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commercials",
+  "info": {
+    "singularName": "commercial",
+    "pluralName": "commercials",
+    "displayName": "Commercial"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
