@@ -1,0 +1,12 @@
+[] set up webhooks
+✔ set up litestream @done(22-03-01 12:33)
+write install.sh that installs:
+  ☐ nginx
+  [] nvm
+  [] npm
+  [] node
+  [] pm2
+  [] certbot
+  [] litestream
+  [] git
+  [] pulls from the correct repo
