@@ -2,22 +2,24 @@
   "name": "recyclopedia-cms",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Recyclopedia.sg CMS",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^5.69.1"
+  },
   "dependencies": {
-    "@strapi/strapi": "4.1.1",
-    "@strapi/plugin-users-permissions": "4.1.1",
     "@strapi/plugin-i18n": "4.1.1",
+    "@strapi/plugin-users-permissions": "4.1.1",
+    "@strapi/strapi": "4.1.1",
     "sqlite3": "5.0.2"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Alfred"
   },
   "strapi": {},
   "engines": {
