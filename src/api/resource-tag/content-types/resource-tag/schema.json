@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resource_tags",
+  "info": {
+    "singularName": "resource-tag",
+    "pluralName": "resource-tags",
+    "displayName": "Resource Tag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "type": "string",
+      "regex": "^[a-z0-9\\-]+$",
+      "required": true
+    }
+  }
+}

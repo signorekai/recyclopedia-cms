@@ -47,6 +47,10 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "items"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

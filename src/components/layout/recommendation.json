@@ -31,6 +31,17 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::commercial.commercial"
+    },
+    "recommendation": {
+      "type": "enumeration",
+      "enum": [
+        "Donate",
+        "EWasteCollection",
+        "Recycle",
+        "Repair",
+        "Trash",
+        "Others"
+      ]
     }
   }
 }
