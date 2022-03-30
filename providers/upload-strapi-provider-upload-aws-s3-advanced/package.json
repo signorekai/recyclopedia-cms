@@ -1,0 +1,49 @@
+{
+  "name": "strapi-provider-upload-aws-s3-advanced",
+  "version": "4.0.8",
+  "description": "AWS S3 provider for strapi upload with more advanced configuration options",
+  "homepage": "https://strapi.io",
+  "keywords": [
+    "upload",
+    "aws",
+    "s3",
+    "strapi"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.43.0"
+  },
+  "strapi": {
+    "isProvider": true
+  },
+  "author": {
+    "email": "alexander.bartolomey@anny.co",
+    "name": "Alexander Bartolomey",
+    "url": "https://anny.co"
+  },
+  "maintainers": [
+    {
+      "name": "Alexander Bartolomey",
+      "email": "alexander.bartolomey@anny.co",
+      "url": "https://anny.co"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zoomoid/strapi-provider-upload-aws-s3-advanced.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zoomoid/strapi-provider-upload-aws-s3-advanced/issues"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"no tests yet\""
+  }
+}
