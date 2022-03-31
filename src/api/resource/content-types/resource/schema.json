@@ -36,14 +36,6 @@
         "images"
       ]
     },
-    "coverImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "address": {
       "type": "string"
     },
