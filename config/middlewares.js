@@ -16,7 +16,13 @@ module.exports = ({ env }) => [
         useDefaults: true,
         directives: {
           "connect-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:", `${env("CDN_BASE_URL")}`],
+          "img-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            `${env("CDN_BASE_URL")}`,
+            `https://dl.airtable.com`,
+          ],
           "media-src": ["'self'", "data:", "blob:", `${env("CDN_BASE_URL")}`],
           upgradeInsecureRequests: null,
         },
