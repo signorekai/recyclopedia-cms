@@ -15,10 +15,11 @@
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.5",
     "@strapi/plugin-users-permissions": "4.1.5",
+    "@strapi/provider-upload-strapi-provider-upload-aws-s3-advanced": "file:providers/upload-strapi-provider-upload-aws-s3-advanced",
     "@strapi/strapi": "4.1.5",
     "sqlite3": "5.0.2",
-    "strapi-tiptap-editor": "^0.7.3",
-    "@strapi/provider-upload-strapi-provider-upload-aws-s3-advanced": "file:providers/upload-strapi-provider-upload-aws-s3-advanced"
+    "strapi-plugin-transformer": "^2.0.0",
+    "strapi-tiptap-editor": "^0.7.3"
   },
   "author": {
     "name": "Alfred"

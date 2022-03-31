@@ -31,12 +31,7 @@
       "type": "string",
       "regex": "^([A-Za-z0-9 ]?)+([,]{1}\\s{1}([A-Za-z0-9]\\s?)+)*$"
     },
-    "itemRecommendation": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::item-recommendation.item-recommendation"
-    },
-    "Recommendations": {
+    "recommendations": {
       "type": "component",
       "repeatable": true,
       "component": "layout.recommendation",
@@ -51,6 +46,14 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

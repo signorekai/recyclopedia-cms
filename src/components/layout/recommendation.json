@@ -35,9 +35,10 @@
     "recommendation": {
       "type": "enumeration",
       "enum": [
-        "Donate",
-        "EWasteCollection",
         "Recycle",
+        "eWasteRecycle",
+        "RecycleElsewhere",
+        "GiveAway",
         "Repair",
         "Trash",
         "Others"
