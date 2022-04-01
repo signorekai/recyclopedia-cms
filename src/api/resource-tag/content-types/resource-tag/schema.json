@@ -17,10 +17,11 @@
       "required": true,
       "unique": true
     },
-    "icon": {
-      "type": "string",
-      "regex": "^[a-z0-9\\-]+$",
-      "required": true
+    "resources": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::resource.resource",
+      "inversedBy": "resourceTags"
     }
   }
 }

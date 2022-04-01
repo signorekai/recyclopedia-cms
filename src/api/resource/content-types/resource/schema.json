@@ -44,8 +44,9 @@
     },
     "resourceTags": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::resource-tag.resource-tag"
+      "relation": "manyToMany",
+      "target": "api::resource-tag.resource-tag",
+      "inversedBy": "resources"
     },
     "slug": {
       "type": "uid",
