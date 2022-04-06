@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "resource_pages",
+  "info": {
+    "singularName": "resource-page",
+    "pluralName": "resource-pages",
+    "displayName": "Resources Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "colour": {
+      "pluginOptions": {},
+      "type": "string",
+      "regex": "^#?([\\da-fA-F]{2})([\\da-fA-F]{2})([\\da-fA-F]{2})$",
+      "required": true
+    },
+    "iconStyle": {
+      "pluginOptions": {},
+      "type": "enumeration",
+      "enum": [
+        "Solid",
+        "Light",
+        "Regular"
+      ],
+      "default": "Regular",
+      "required": true
+    },
+    "icon": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "resourceTags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resource-tag.resource-tag"
+    }
+  }
+}

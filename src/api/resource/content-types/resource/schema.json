@@ -51,6 +51,11 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "relatedItems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item"
     }
   }
 }
