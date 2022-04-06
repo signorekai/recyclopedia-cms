@@ -48,6 +48,13 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::resource-tag.resource-tag"
+    },
+    "gridColumnCount": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 3,
+      "default": 3
     }
   }
 }

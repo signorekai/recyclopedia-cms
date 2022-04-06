@@ -38,6 +38,13 @@
     "icon": {
       "type": "string",
       "required": true
+    },
+    "gridColumnCount": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 3,
+      "default": 3
     }
   }
 }
