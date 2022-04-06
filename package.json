@@ -13,11 +13,14 @@
     "webpack": "^5.69.1"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.1.5",
-    "@strapi/plugin-users-permissions": "4.1.5",
+    "@strapi/plugin-i18n": "4.1.7",
+    "@strapi/plugin-users-permissions": "4.1.7",
     "@strapi/provider-upload-strapi-provider-upload-aws-s3-advanced": "file:providers/upload-strapi-provider-upload-aws-s3-advanced",
-    "@strapi/strapi": "4.1.5",
-    "sqlite3": "5.0.2",
+    "@strapi/strapi": "4.1.7",
+    "sqlite3": "^4.2.0",
+    "strapi-plugin-notes": "^1.0.0",
+    "strapi-plugin-placeholder": "^4.1.7",
+    "strapi-plugin-publisher": "^1.1.3",
     "strapi-plugin-transformer": "^2.0.0",
     "strapi-tiptap-editor": "^0.7.3"
   },

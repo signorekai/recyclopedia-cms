@@ -17,6 +17,18 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  placeholder: {
+    enabled: true,
+    config: {
+      size: 10,
+    },
+  },
+  publisher: {
+    enabled: true,
+  },
+  "entity-notes": {
+    enabled: true,
+  },
   transformer: {
     enabled: true,
     config: {
