@@ -1,0 +1,60 @@
+{
+  "kind": "singleType",
+  "collectionName": "donate_pages",
+  "info": {
+    "singularName": "donate-page",
+    "pluralName": "donate-pages",
+    "displayName": "Donate Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "colour": {
+      "pluginOptions": {},
+      "type": "string",
+      "regex": "^#?([\\da-fA-F]{2})([\\da-fA-F]{2})([\\da-fA-F]{2})$",
+      "required": true
+    },
+    "iconStyle": {
+      "pluginOptions": {},
+      "type": "enumeration",
+      "enum": [
+        "Solid",
+        "Light",
+        "Regular"
+      ],
+      "default": "Regular",
+      "required": true
+    },
+    "icon": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "resourceTags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resource-tag.resource-tag"
+    },
+    "gridColumnCount": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 3,
+      "default": 3
+    }
+  }
+}
