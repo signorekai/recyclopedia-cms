@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "items_pages",
+  "info": {
+    "singularName": "items-page",
+    "pluralName": "items-pages",
+    "displayName": "Items Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "colour": {
+      "type": "string",
+      "required": true,
+      "regex": "^#?([\\da-fA-F]{2})([\\da-fA-F]{2})([\\da-fA-F]{2})$"
+    },
+    "iconStyle": {
+      "type": "enumeration",
+      "enum": [
+        "Solid",
+        "Light",
+        "Regular"
+      ],
+      "default": "Regular",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
