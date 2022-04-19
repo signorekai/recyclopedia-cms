@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_us_pages",
+  "info": {
+    "singularName": "about-us-page",
+    "pluralName": "about-us-pages",
+    "displayName": "About Us Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "supporters": {
+      "displayName": "supporters",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.supporters"
+    },
+    "introHeader": {
+      "type": "string"
+    }
+  }
+}

@@ -20,7 +20,7 @@
     "subtitle": {
       "pluginOptions": {},
       "type": "string",
-      "required": true
+      "required": false
     },
     "colour": {
       "pluginOptions": {},

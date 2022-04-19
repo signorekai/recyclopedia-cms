@@ -18,7 +18,7 @@
     },
     "subtitle": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "colour": {
       "type": "string",

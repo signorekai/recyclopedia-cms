@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_articles",
+  "info": {
+    "displayName": "Article",
+    "icon": "poll-h"
+  },
+  "options": {},
+  "attributes": {
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    }
+  }
+}

@@ -13,11 +13,6 @@
     "otherText": {
       "type": "richtext"
     },
-    "itemRecommendation": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::item-recommendation.item-recommendation"
-    },
     "title": {
       "type": "string",
       "unique": false
