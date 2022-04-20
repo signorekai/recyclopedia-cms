@@ -56,6 +56,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::item.item"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "resources"
     }
   }
 }

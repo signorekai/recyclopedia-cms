@@ -46,6 +46,12 @@
     },
     "excerpt": {
       "type": "text"
+    },
+    "resources": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::resource.resource",
+      "inversedBy": "articles"
     }
   }
 }
