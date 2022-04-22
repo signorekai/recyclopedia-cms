@@ -20,6 +20,7 @@
     "@strapi/strapi": "4.1.7",
     "react-is": "^18.0.0",
     "sqlite3": "^4.2.0",
+    "strapi-plugin-ezforms": "0.0.7",
     "strapi-plugin-notes": "^1.0.0",
     "strapi-plugin-placeholder": "^4.1.7",
     "strapi-plugin-publisher": "^1.1.3",
