@@ -19,7 +19,7 @@ module.exports = {
       repo: "git@gitlab.com:alfredlau/recyclopedia-strapi.git",
       path: "/var/www/cms",
       "post-setup": "npm run build:prod",
-      "post-deploy": "pm2 startOrRestart ecosystem.json --env production",
+      "post-deploy": "pm2 startOrRestart ecosystem.config.js --env production",
     },
   },
 };
