@@ -18,6 +18,7 @@ module.exports = {
       ref: "origin/master",
       repo: "git@gitlab.com:alfredlau/recyclopedia-strapi.git",
       path: "/var/www/cms",
+      "post-deploy": "npx pm2 startOrRestart ecosystem.json --env production",
     },
   },
 };
