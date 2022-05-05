@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "recyclopedia-cms",
-      script: "strapi",
+      script: "npm",
       args: "start",
       env: {
         NODE_ENV: "production",
