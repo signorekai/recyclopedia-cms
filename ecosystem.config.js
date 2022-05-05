@@ -20,7 +20,7 @@ module.exports = {
       path: "/var/www/cms",
       "post-setup": "npm run build:prod",
       "post-deploy":
-        "npm run build:prod & pm2 startOrRestart ecosystem.config.js --env production",
+        "npm run build:prod && pm2 startOrRestart ecosystem.config.js --env production",
     },
   },
 };
