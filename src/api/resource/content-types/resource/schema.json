@@ -61,7 +61,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::article.article",
-      "inversedBy": "resources"
+      "mappedBy": "resources"
     }
   }
 }

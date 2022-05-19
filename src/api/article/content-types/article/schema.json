@@ -52,6 +52,9 @@
       "relation": "manyToMany",
       "target": "api::resource.resource",
       "inversedBy": "articles"
+    },
+    "authorBio": {
+      "type": "richtext"
     }
   }
 }
