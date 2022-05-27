@@ -22,11 +22,6 @@
       "relation": "oneToMany",
       "target": "api::resource.resource"
     },
-    "commercials": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::commercial.commercial"
-    },
     "recommendation": {
       "type": "enumeration",
       "enum": [

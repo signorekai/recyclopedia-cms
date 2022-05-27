@@ -23,11 +23,6 @@
       "relation": "oneToOne",
       "target": "api::article.article"
     },
-    "commercial": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::commercial.commercial"
-    },
     "item": {
       "type": "relation",
       "relation": "oneToOne",
