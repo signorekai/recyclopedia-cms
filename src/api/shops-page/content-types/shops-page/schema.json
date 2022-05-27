@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "shops_pages",
+  "info": {
+    "singularName": "shops-page",
+    "pluralName": "shops-pages",
+    "displayName": "Shops Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": false
+    },
+    "colour": {
+      "type": "string",
+      "required": true,
+      "regex": "^#?([\\da-fA-F]{2})([\\da-fA-F]{2})([\\da-fA-F]{2})$"
+    },
+    "iconStyle": {
+      "type": "enumeration",
+      "enum": [
+        "Solid",
+        "Light",
+        "Regular"
+      ],
+      "default": "Regular",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "gridColumnCount": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 3,
+      "default": 3
+    },
+    "resourceTags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resource-tag.resource-tag"
+    }
+  }
+}
