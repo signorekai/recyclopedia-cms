@@ -68,6 +68,9 @@
       "relation": "oneToMany",
       "target": "api::bookmark.bookmark",
       "mappedBy": "user"
+    },
+    "name": {
+      "type": "string"
     }
   }
 }
