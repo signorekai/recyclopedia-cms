@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "general_settings",
+  "info": {
+    "singularName": "general-setting",
+    "pluralName": "general-settings",
+    "displayName": "General Settings",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "footerSocialIcons": {
+      "displayName": "Social Icon",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.social-icon"
+    }
+  }
+}
