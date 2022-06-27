@@ -55,6 +55,10 @@
     },
     "authorBio": {
       "type": "richtext"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

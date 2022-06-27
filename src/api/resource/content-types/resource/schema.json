@@ -62,6 +62,10 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "resources"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
