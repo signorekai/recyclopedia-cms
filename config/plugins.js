@@ -15,6 +15,13 @@ module.exports = ({ env }) => ({
         baseUrl: env("CDN_BASE_URL"), // e.g. https://cdn.example.com, this is stored in strapi's database to point to the file
         prefix: env("BUCKET_PREFIX"), // e.g. strapi-assets, note the missing slash at the start
       },
+      breakpoints: {
+        xlarge: 1400,
+        large: 1000,
+        medium: 750,
+        small: 500,
+        thumbnail: 250,
+      },
     },
   },
   ezforms: {
