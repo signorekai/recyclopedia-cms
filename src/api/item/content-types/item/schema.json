@@ -29,7 +29,7 @@
     },
     "alternateSearchTerms": {
       "type": "string",
-      "regex": "^([A-Za-z0-9 ]?)+([,]{1}\\s{1}([A-Za-z0-9]\\s?)+)*$"
+      "regex": "^([A-Za-z0-9\\#\\-]\\s?)+([,]{1}\\s{1}([A-Za-z0-9\\#\\-]\\s?)+)*$"
     },
     "recommendations": {
       "type": "component",
