@@ -59,6 +59,10 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "visits": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

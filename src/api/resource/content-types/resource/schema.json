@@ -66,6 +66,9 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "visits": {
+      "type": "integer"
     }
   }
 }
