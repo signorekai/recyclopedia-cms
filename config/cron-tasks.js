@@ -93,7 +93,6 @@ module.exports = {
               let currentVisit = entry.visits || 0;
               count += currentVisit;
 
-              console.log(slug, entry.id, count);
               await strapi.entityService.update("api::item.item", entry.id, {
                 data: {
                   visits: count,
@@ -110,7 +109,29 @@ module.exports = {
               for (const visits of Object.values(users)) {
                 count += visits.length;
               }
-              toUpdate.resources[slug] = count;
+              toUpdate.items[slug] = count;
+
+              const [entry] = await strapi.entityService.findMany(
+                "api::resource.resource",
+                {
+                  filters: { slug },
+                  fields: ["visits", "id"],
+                }
+              );
+
+              let currentVisit = entry.visits || 0;
+              count += currentVisit;
+
+              console.log(slug, entry.id, count);
+              await strapi.entityService.update(
+                "api::resource.resource",
+                entry.id,
+                {
+                  data: {
+                    visits: count,
+                  },
+                }
+              );
             }
             break;
         }
