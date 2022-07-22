@@ -6,6 +6,7 @@ module.exports = {
       args: "start",
       env: {
         NODE_ENV: "production",
+        AWS_REGION: "ap-south-1",
       },
     },
   ],
