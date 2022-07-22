@@ -4,7 +4,7 @@ module.exports = {
       name: "recyclopedia-cms",
       script: "npm",
       args: "start",
-      env: {
+      env_production: {
         NODE_ENV: "production",
         AWS_REGION: "ap-south-1",
       },
