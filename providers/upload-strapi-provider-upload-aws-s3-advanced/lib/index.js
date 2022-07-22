@@ -8,6 +8,7 @@ const {
 
 module.exports = {
   init(config) {
+    console.log(config);
     const S3 = new S3Client({
       credentials: {
         accessKeyId: config.accessKeyId,
