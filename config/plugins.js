@@ -1,4 +1,9 @@
 module.exports = ({ env }) => ({
+  "users-permissions": {
+    config: {
+      jwtSecret: env("JWT_SECRET"),
+    },
+  },
   upload: {
     config: {
       provider: "strapi-provider-upload-aws-s3-advanced",
@@ -30,12 +35,6 @@ module.exports = ({ env }) => ({
         name: "none",
       },
       notificationProviders: [],
-    },
-  },
-  placeholder: {
-    enabled: true,
-    config: {
-      size: 10,
     },
   },
   publisher: {
