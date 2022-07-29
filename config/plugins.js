@@ -4,6 +4,9 @@ module.exports = ({ env }) => ({
       jwtSecret: env("JWT_SECRET"),
     },
   },
+  "random-sort": {
+    enabled: true,
+  },
   ckeditor: {
     enabled: true,
     config: {
