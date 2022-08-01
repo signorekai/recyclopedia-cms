@@ -63,6 +63,11 @@
     "visits": {
       "type": "integer",
       "default": 0
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "default": 0
     }
   }
 }
