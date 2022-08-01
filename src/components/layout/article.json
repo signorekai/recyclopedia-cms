@@ -2,7 +2,8 @@
   "collectionName": "components_layout_articles",
   "info": {
     "displayName": "Article",
-    "icon": "poll-h"
+    "icon": "poll-h",
+    "description": ""
   },
   "options": {},
   "attributes": {
