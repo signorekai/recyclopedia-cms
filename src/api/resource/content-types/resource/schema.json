@@ -69,6 +69,14 @@
     },
     "visits": {
       "type": "integer"
+    },
+    "resourceIcon": {
+      "type": "enumeration",
+      "enum": [
+        "None",
+        "Facebook",
+        "Telegram"
+      ]
     }
   }
 }
