@@ -21,7 +21,7 @@ module.exports = {
       path: "/var/www/cms",
       "post-setup": "npm run build:prod",
       "post-deploy":
-        "patch-package && npm run build:prod && pm2 startOrRestart ecosystem.config.js --env production",
+        "npm install && npm run build:prod && pm2 startOrRestart ecosystem.config.js --env production",
     },
     "production:silent": {
       key: "/users/alfredlau/.ssh/recyclopedia",
