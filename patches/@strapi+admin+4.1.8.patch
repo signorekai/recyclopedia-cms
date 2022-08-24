@@ -1,0 +1,13 @@
+diff --git a/node_modules/@strapi/admin/admin/src/content-manager/components/DynamicTable/CellContent/CellValue.js b/node_modules/@strapi/admin/admin/src/content-manager/components/DynamicTable/CellContent/CellValue.js
+index 12db514..023bd34 100644
+--- a/node_modules/@strapi/admin/admin/src/content-manager/components/DynamicTable/CellContent/CellValue.js
++++ b/node_modules/@strapi/admin/admin/src/content-manager/components/DynamicTable/CellContent/CellValue.js
+@@ -13,7 +13,7 @@ const CellValue = ({ type, value }) => {
+   }
+ 
+   if (type === 'datetime') {
+-    formattedValue = formatDate(value, { dateStyle: 'full', timeStyle: 'short' });
++    formattedValue = formatDate(value, { dateStyle: 'medium', timeStyle: 'short' });
+   }
+ 
+   if (type === 'time') {
