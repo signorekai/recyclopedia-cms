@@ -10,7 +10,8 @@
     "build:prod": "NODE_ENV=production strapi build",
     "strapi": "strapi",
     "deploy": "pm2 deploy production",
-    "deploy:silent": "pm2 deploy production:silent"
+    "deploy:silent": "pm2 deploy production:silent",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
     "webpack": "^5.69.1"
@@ -22,6 +23,7 @@
     "@strapi/provider-upload-strapi-provider-upload-aws-s3-advanced": "file:providers/upload-strapi-provider-upload-aws-s3-advanced",
     "@strapi/strapi": "4.1.8",
     "better-sqlite3": "^7.6.2",
+    "patch-package": "^6.4.7",
     "react-is": "^18.0.0",
     "strapi-plugin-ezforms": "0.0.7",
     "strapi-plugin-notes": "^1.0.0",
