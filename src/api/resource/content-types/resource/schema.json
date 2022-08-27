@@ -77,6 +77,12 @@
         "Facebook",
         "Telegram"
       ]
+    },
+    "externalLinks": {
+      "displayName": "External Links",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.external-links"
     }
   }
 }
