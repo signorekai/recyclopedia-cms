@@ -1,0 +1,44 @@
+diff --git a/node_modules/@_sh/strapi-plugin-ckeditor/admin/src/components/CKEditor/index.js b/node_modules/@_sh/strapi-plugin-ckeditor/admin/src/components/CKEditor/index.js
+index 3c231ef..4ad0283 100644
+--- a/node_modules/@_sh/strapi-plugin-ckeditor/admin/src/components/CKEditor/index.js
++++ b/node_modules/@_sh/strapi-plugin-ckeditor/admin/src/components/CKEditor/index.js
+@@ -41,21 +41,24 @@ const Editor = ({ onChange, name, value, disabled }) => {
+ 
+     assets.map((asset) => {
+       if (asset.mime.includes("image")) {
+-        if (asset.formats && uploadCfg?.responsiveDimensions) {
+-          let set = "";
+-          let keys = Object.keys(asset.formats).sort((a, b) => {
+-            return asset.formats[a].width - asset.formats[b].width;
+-          });
+-          keys.map((k) => {
+-            let str = prefixFileUrlWithBackendUrl(asset.formats[k].url) + ` ${asset.formats[k].width}w,`;
+-            set = set + str;
+-          });
+-          const imgTag = `<img src="${asset.url}" alt="${asset.alt}" srcset="${set}"></img>`;
+-          newValue = `${newValue}${imgTag}`;
+-        } else {
+-          const imgTag = `<img src="${asset.url}" alt="${asset.alt}"></img>`;
+-          newValue = `${newValue}${imgTag}`;
+-        }
++        // if (asset.formats && uploadCfg?.responsiveDimensions) {
++        //   let set = "";
++        //   let keys = Object.keys(asset.formats).sort((a, b) => {
++        //     return asset.formats[a].width - asset.formats[b].width;
++        //   });
++        //   keys.map((k) => {
++        //     let str = prefixFileUrlWithBackendUrl(asset.formats[k].url) + ` ${asset.formats[k].width}w,`;
++        //     set = set + str;
++        //   });
++        //   const imgTag = `<img src="${asset.url}" alt="${asset.alt}" srcset="${set}"></img>`;
++        //   newValue = `${newValue}${imgTag}`;
++        // } else {
++        //   const imgTag = `<img src="${asset.url}" alt="${asset.alt}"></img>`;
++        //   newValue = `${newValue}${imgTag}`;
++        // }
++        // ignore responsive images because we need absolute control of the image
++        const imgTag = `<img src="${asset.url}" alt="${asset.alt}"></img>`;
++        newValue = `${newValue}${imgTag}`;
+       }
+       // Handle videos and other type of files by adding some code
+     });
