@@ -75,7 +75,8 @@
       "enum": [
         "None",
         "Facebook",
-        "Telegram"
+        "Telegram",
+        "Sponsored"
       ]
     },
     "externalLinks": {
