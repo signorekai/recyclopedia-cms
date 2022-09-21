@@ -25,7 +25,6 @@
     "better-sqlite3": "^7.6.2",
     "patch-package": "^6.4.7",
     "react-is": "^18.0.0",
-    "strapi-plugin-ezforms": "0.0.7",
     "strapi-plugin-notes": "^1.0.0",
     "strapi-plugin-publisher": "^1.1.3",
     "strapi-plugin-transformer": "^2.0.0"
