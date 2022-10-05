@@ -23,7 +23,7 @@
       "target": "api::resource.resource",
       "mappedBy": "resourceTags"
     },
-    "cssClasses": {
+    "icon": {
       "type": "string"
     },
     "bgColour": {
