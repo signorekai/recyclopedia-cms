@@ -17,11 +17,11 @@
     "webpack": "^5.69.1"
   },
   "dependencies": {
+    "@strapi/plugin-i18n": "4.1.10",
+    "@strapi/plugin-users-permissions": "4.1.10",
+    "@strapi/strapi": "4.1.10",
     "@_sh/strapi-plugin-ckeditor": "^1.1.1",
-    "@strapi/plugin-i18n": "4.1.8",
-    "@strapi/plugin-users-permissions": "4.1.8",
     "@strapi/provider-upload-strapi-provider-upload-aws-s3-advanced": "file:providers/upload-strapi-provider-upload-aws-s3-advanced",
-    "@strapi/strapi": "4.1.8",
     "better-sqlite3": "^7.6.2",
     "patch-package": "^6.4.7",
     "react-is": "^18.0.0",
