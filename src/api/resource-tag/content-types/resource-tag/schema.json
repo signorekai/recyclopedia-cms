@@ -22,6 +22,17 @@
       "relation": "manyToMany",
       "target": "api::resource.resource",
       "mappedBy": "resourceTags"
+    },
+    "cssClasses": {
+      "type": "string"
+    },
+    "bgColour": {
+      "type": "enumeration",
+      "enum": [
+        "bg-blue-light",
+        "bg-coral",
+        "bg-blue"
+      ]
     }
   }
 }
