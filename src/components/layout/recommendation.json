@@ -36,6 +36,11 @@
         "Others",
         "TipsAndSuggestions"
       ]
+    },
+    "resourcesComp": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.recommendation-resources"
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_layout_recommendation_resources",
+  "info": {
+    "displayName": "Recommendation Resources",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "resource": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::resource.resource"
+    }
+  }
+}
