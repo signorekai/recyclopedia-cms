@@ -235,6 +235,114 @@ module.exports = ({ env }) => ({
   "entity-notes": {
     enabled: true,
   },
+  "fuzzy-search": {
+    enabled: true,
+    config: {
+      contentTypes: [
+        {
+          uid: "api::article.article",
+          modelName: "article",
+          queryConstraints: {
+            where: {
+              $and: [
+                {
+                  publishedAt: { $notNull: true },
+                },
+              ],
+            },
+          },
+          fuzzysortOptions: {
+            threshold: -600,
+            limit: 1000,
+            keys: [
+              {
+                name: "title",
+                weight: 100,
+              },
+              {
+                name: "content",
+                weight: -100,
+              },
+            ],
+          },
+        },
+        {
+          uid: "api::item.item",
+          modelName: "item",
+          queryConstraints: {
+            populate: ["images", "itemCategory"],
+            where: {
+              $and: [
+                {
+                  publishedAt: { $notNull: true },
+                },
+              ],
+            },
+          },
+          fuzzysortOptions: {
+            threshold: -30,
+            limit: 100,
+            keys: [
+              {
+                name: "title",
+                weight: 10,
+              },
+              {
+                name: "alternateSearchTerms",
+                weight: 1500,
+              },
+            ],
+          },
+        },
+        {
+          uid: "api::resource.resource",
+          modelName: "resource",
+          queryConstraints: {
+            populate: ["images", "resourceTags"],
+            where: {
+              $and: [
+                {
+                  publishedAt: { $notNull: true },
+                },
+              ],
+            },
+          },
+          fuzzysortOptions: {
+            threshold: -1000,
+            limit: 100,
+            keys: [
+              {
+                name: "title",
+                weight: 100,
+              },
+              {
+                name: "description",
+                weight: 100,
+              },
+              {
+                name: "items",
+                weight: 10000,
+              },
+            ],
+          },
+        },
+        {
+          uid: "api::resource-tag.resource-tag",
+          modelName: "resource-tag",
+          fuzzysortOptions: {
+            threshold: -100,
+            limit: 100,
+            keys: [
+              {
+                name: "title",
+                weight: 100,
+              },
+            ],
+          },
+        },
+      ],
+    },
+  },
   transformer: {
     enabled: true,
     config: {
