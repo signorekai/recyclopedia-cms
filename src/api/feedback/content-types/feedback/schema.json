@@ -41,6 +41,19 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "In Progress",
+        "Completed"
+      ],
+      "private": true
+    },
+    "adminNotes": {
+      "type": "richtext",
+      "private": true
     }
   }
 }
