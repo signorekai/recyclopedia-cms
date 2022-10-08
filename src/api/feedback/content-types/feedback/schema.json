@@ -45,11 +45,13 @@
     "status": {
       "type": "enumeration",
       "enum": [
+        "New",
         "Pending",
         "In Progress",
         "Completed"
       ],
-      "private": true
+      "private": true,
+      "default": "New"
     },
     "adminNotes": {
       "type": "richtext",
