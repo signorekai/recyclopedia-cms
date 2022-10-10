@@ -47,7 +47,9 @@
       "enum": [
         "New",
         "Pending",
+        "Accepted",
         "In Progress",
+        "Rejected",
         "Completed"
       ],
       "private": true,
