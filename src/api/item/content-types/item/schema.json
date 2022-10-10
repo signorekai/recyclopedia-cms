@@ -67,6 +67,14 @@
       "type": "boolean",
       "default": false,
       "private": true
+    },
+    "bluebin": {
+      "type": "boolean",
+      "default": false
+    },
+    "recycleElsewhere": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
