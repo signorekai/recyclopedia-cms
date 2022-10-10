@@ -61,7 +61,8 @@
     },
     "visits": {
       "type": "integer",
-      "default": 0
+      "default": 0,
+      "private": true
     },
     "completed": {
       "type": "boolean",
