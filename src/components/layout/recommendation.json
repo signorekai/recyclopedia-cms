@@ -25,17 +25,18 @@
     "recommendation": {
       "type": "enumeration",
       "enum": [
-        "Recycle",
+        "BuyOrSell",
+        "CharitableDonation",
         "eWasteRecycle",
-        "RecycleElsewhere",
-        "RecycleAsPaper",
         "GiveAway",
+        "Recycle",
+        "RecycleAsPaper",
+        "RecycleElsewhere",
         "Repair",
         "Reuse",
+        "TipsAndSuggestions",
         "Trash",
-        "BuyOrSell",
-        "Others",
-        "TipsAndSuggestions"
+        "Others"
       ]
     },
     "resourcesComp": {
