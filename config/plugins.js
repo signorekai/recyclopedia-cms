@@ -4,6 +4,18 @@ module.exports = ({ env }) => ({
       jwtSecret: env("JWT_SECRET"),
     },
   },
+  email: {
+    config: {
+      provider: "sendgrid",
+      providerOptions: {
+        apiKey: env("SENDGRID_API_KEY"),
+      },
+      settings: {
+        defaultFrom: "no-reply@recyclopedia.sg",
+        defaultReplyTo: "info@recyclopedia.sg",
+      },
+    },
+  },
   ckeditor: {
     enabled: true,
     config: {
