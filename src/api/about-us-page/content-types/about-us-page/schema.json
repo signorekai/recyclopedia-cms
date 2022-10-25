@@ -26,6 +26,9 @@
     },
     "introHeader": {
       "type": "string"
+    },
+    "bodyText": {
+      "type": "richtext"
     }
   }
 }
