@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "search_terms",
+  "info": {
+    "singularName": "search-term",
+    "pluralName": "search-terms",
+    "displayName": "Search Terms",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "term": {
+      "type": "string"
+    },
+    "hits": {
+      "type": "biginteger"
+    },
+    "visitedAt": {
+      "type": "json"
+    }
+  }
+}
