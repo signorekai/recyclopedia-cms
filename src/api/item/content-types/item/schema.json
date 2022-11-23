@@ -76,6 +76,10 @@
     "recycleElsewhere": {
       "type": "boolean",
       "default": false
+    },
+    "showSimilar": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
