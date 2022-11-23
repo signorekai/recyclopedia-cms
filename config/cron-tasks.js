@@ -148,7 +148,7 @@ module.exports = {
       );
     },
     options: {
-      rule: "59 * * * *",
+      rule: "20 * * * *",
     },
   },
 };
