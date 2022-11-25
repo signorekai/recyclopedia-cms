@@ -16,7 +16,7 @@ module.exports = createCoreController(
         {
           filters: {
             term: {
-              $eq: ctx.request.body.data.term,
+              $eqi: ctx.request.body.data.term,
             },
           },
         }
@@ -28,7 +28,7 @@ module.exports = createCoreController(
           "api::search-term.search-term",
           {
             data: {
-              term: ctx.request.body.data.term,
+              term: ctx.request.body.data.term.toLowerCase(),
               hits: 1,
               visitedAt: [new Date().toISOString()],
             },
