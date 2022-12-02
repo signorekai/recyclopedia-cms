@@ -38,6 +38,18 @@
     },
     "visitorId": {
       "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "New",
+        "Pending",
+        "KIV",
+        "Action",
+        "Closed"
+      ],
+      "private": true,
+      "default": "New"
     }
   }
 }
