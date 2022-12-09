@@ -23,6 +23,18 @@
       "components": [
         "layout.article"
       ]
+    },
+    "homepageFeaturedDonationDrives": {
+      "type": "dynamiczone",
+      "components": [
+        "layout.article"
+      ]
+    },
+    "newsletterHeader": {
+      "type": "string"
+    },
+    "newsletterBodyText": {
+      "type": "richtext"
     }
   }
 }
