@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_tags",
+  "info": {
+    "singularName": "item-tag",
+    "pluralName": "item-tags",
+    "displayName": "Item Tag"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item",
+      "mappedBy": "itemTag"
+    }
+  }
+}
