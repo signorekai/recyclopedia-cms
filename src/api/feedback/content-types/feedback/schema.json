@@ -50,7 +50,8 @@
         "Accepted",
         "In Progress",
         "Rejected",
-        "Completed"
+        "Completed",
+        "Closed"
       ],
       "private": true,
       "default": "New"
