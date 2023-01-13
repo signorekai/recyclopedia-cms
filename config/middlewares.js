@@ -21,7 +21,7 @@ module.exports = ({ env }) => [
             "data:",
             "blob:",
             `${env("CDN_BASE_URL")}`,
-            `https://rechttps://recyclopedia.ap-south-1.linodeobjects.com`,
+            `https://recyclopedia.ap-south-1.linodeobjects.com`,
             `https://dl.airtable.com`,
           ],
           "media-src": [
