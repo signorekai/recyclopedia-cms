@@ -27,7 +27,7 @@
     "subtitle": {
       "type": "richtext"
     },
-    "seo": {
+    "SEO": {
       "type": "component",
       "repeatable": false,
       "component": "seo.seo"

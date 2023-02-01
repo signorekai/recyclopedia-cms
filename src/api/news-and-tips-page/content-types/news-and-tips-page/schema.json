@@ -43,7 +43,7 @@
       "components": ["layout.article"],
       "max": 4
     },
-    "seo": {
+    "SEO": {
       "type": "component",
       "repeatable": false,
       "component": "seo.seo"
