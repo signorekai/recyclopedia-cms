@@ -29,11 +29,7 @@
     "iconStyle": {
       "pluginOptions": {},
       "type": "enumeration",
-      "enum": [
-        "Solid",
-        "Light",
-        "Regular"
-      ],
+      "enum": ["Solid", "Light", "Regular"],
       "default": "Regular",
       "required": true
     },
@@ -44,10 +40,13 @@
     },
     "featuredArticles": {
       "type": "dynamiczone",
-      "components": [
-        "layout.article"
-      ],
+      "components": ["layout.article"],
       "max": 4
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
     }
   }
 }
