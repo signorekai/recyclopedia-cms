@@ -374,8 +374,12 @@ module.exports = ({ env }) => ({
             "alternateSearchTerms",
             "recommendations",
             "slug",
-            "coverImage",
+            "images",
           ],
+        },
+        {
+          name: "api::article.article",
+          fields: ["title", "content", "coverImage", "slug"],
         },
         {
           name: "api::resource.resource",
