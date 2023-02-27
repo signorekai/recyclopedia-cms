@@ -1,0 +1,26 @@
+diff --git a/node_modules/@mattie-bundle/strapi-plugin-search/server/services/lifecycle.js b/node_modules/@mattie-bundle/strapi-plugin-search/server/services/lifecycle.js
+index c37c5cb..a6e22f7 100644
+--- a/node_modules/@mattie-bundle/strapi-plugin-search/server/services/lifecycle.js
++++ b/node_modules/@mattie-bundle/strapi-plugin-search/server/services/lifecycle.js
+@@ -52,11 +52,16 @@ module.exports = () => ({
+             // },
+ 
+             async afterUpdate(event) {
+-              provider.update({
+-                indexName,
+-                data: sanitize(event.result),
+-                id: idPrefix + event.result.id,
+-              });
++
++              if (event.result.publishedAt !== null) {
++                provider.update({
++                  indexName,
++                  data: sanitize(event.result),
++                  id: idPrefix + event.result.id,
++                });
++              } else {
++                console.log(63);
++              }
+             },
+ 
+             // Todo: Fix `afterUpdateMany` event result only has an count, it doesn't provide an array of result objects.

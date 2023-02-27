@@ -354,6 +354,49 @@ module.exports = ({ env }) => ({
       ],
     },
   },
+  search: {
+    enabled: true,
+    config: {
+      provider: "algolia",
+      providerOptions: {
+        apiKey: env("ALGOLIA_PROVIDER_ADMIN_API_KEY"),
+        applicationId: env("ALGOLIA_PROVIDER_APPLICATION_ID"),
+      },
+      contentTypes: [
+        {
+          name: "api::article.article",
+          fields: ["title", "content", "slug"],
+        },
+        {
+          name: "api::item.item",
+          fields: [
+            "title",
+            "alternateSearchTerms",
+            "recommendations",
+            "slug",
+            "coverImage",
+          ],
+        },
+        {
+          name: "api::resource.resource",
+          fields: [
+            "title",
+            "description",
+            "recommendations",
+            "slug",
+            "images",
+            "locations",
+            "items",
+            "resourceTags",
+          ],
+        },
+        {
+          name: "api::faq.faq",
+          fields: ["section"],
+        },
+      ],
+    },
+  },
   transformer: {
     enabled: true,
     config: {

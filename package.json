@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^1.1.1",
+    "@mattie-bundle/strapi-plugin-search": "^1.0.0-alpha.3",
+    "@mattie-bundle/strapi-provider-search-algolia": "^1.0.0-alpha.3",
     "@strapi/plugin-i18n": "4.3.9",
     "@strapi/plugin-users-permissions": "4.3.9",
     "@strapi/provider-email-sendgrid": "^4.4.5",
