@@ -89,6 +89,11 @@
       "type": "boolean",
       "default": false,
       "private": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
     }
   }
 }
