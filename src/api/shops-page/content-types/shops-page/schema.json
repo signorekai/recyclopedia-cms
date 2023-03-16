@@ -47,7 +47,7 @@
       "relation": "oneToMany",
       "target": "api::resource-tag.resource-tag"
     },
-    "seo": {
+    "SEO": {
       "type": "component",
       "repeatable": false,
       "component": "seo.seo"
