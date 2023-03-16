@@ -45,6 +45,11 @@
       "max": 5,
       "min": 3,
       "default": 3
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
     }
   }
 }
