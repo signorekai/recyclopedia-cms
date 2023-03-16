@@ -13,7 +13,7 @@
   "attributes": {
     "SEO": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "seo.seo"
     }
   }
