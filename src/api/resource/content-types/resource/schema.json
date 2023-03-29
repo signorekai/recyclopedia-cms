@@ -32,9 +32,7 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "address": {
       "type": "string"
@@ -72,12 +70,7 @@
     },
     "resourceIcon": {
       "type": "enumeration",
-      "enum": [
-        "None",
-        "Facebook",
-        "Telegram",
-        "Sponsored"
-      ]
+      "enum": ["None", "Facebook", "Telegram", "Sponsored"]
     },
     "externalLinks": {
       "displayName": "External Links",
@@ -94,6 +87,9 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.seo"
+    },
+    "contentUpdatedAt": {
+      "type": "datetime"
     }
   }
 }
