@@ -122,7 +122,6 @@ module.exports = {
               let currentVisit = entry.visits || 0;
               count += currentVisit;
 
-              console.log(slug, entry.id, count);
               await strapi.entityService.update(
                 "api::resource.resource",
                 entry.id,
