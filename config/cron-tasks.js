@@ -31,7 +31,7 @@ module.exports = {
       for (const log of logs) {
         const timestamp = new Date(log.dateTime).getTime();
         const matches =
-          /\/{1}(shops|items|resources|articles|donate)\/([a-zA-Z\-]+)/g.exec(
+          /\/{1}(shops|items|resources|articles|donate)\/([a-zA-Z\-0-9]+)/g.exec(
             log.path
           );
 
