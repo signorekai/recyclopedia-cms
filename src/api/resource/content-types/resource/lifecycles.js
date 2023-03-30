@@ -56,39 +56,20 @@ const handler = async (event) => {
 };
 
 const beforeUpdateHandler = async (event) => {
-  let { data } = event.params;
+  let { data, where } = event.params;
 
-  const fieldExceptions = ["visits", "contentUpdatedAt", "updatedAt"];
+  const newData = await strapi
+    .service("api::helpers.content-updated-at")
+    .checkForContentUpdate({
+      model: "api::resource.resource",
+      id: where.id,
+      data,
+    });
 
-  let entryChanged = false;
-
-  for (const key of Object.keys(data)) {
-    if (fieldExceptions.indexOf(key) === -1) {
-      entryChanged = true;
-      break;
-    }
-  }
-
-  console.log("entry changed:", entryChanged);
-  if (entryChanged) {
-    data.contentUpdatedAt = data.updatedAt;
-  }
-
+  data = newData;
   return event;
-
-  // console.log(action, event.params.data.recommendations);
-
-  // pass a copy of current data to afterUpdate as event.state is not working
-  // https://forum.strapi.io/t/sharing-state-between-beforedelete-and-afterdelete-lifecycle-hooks/14149
-  // https://discord.com/channels/811989166782021633/841755530007805983/960790437772292146
-  // event.params.data.temp = {
-  //   action,
-  //   data: current,
-  // };
 };
 
 module.exports = {
-  afterCreate: handler,
   beforeUpdate: beforeUpdateHandler,
-  afterUpdate: handler,
 };

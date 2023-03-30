@@ -8,33 +8,11 @@ const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::item.item", ({ strapi }) => ({
   async updateNoDate(ctx) {
-    const items = await strapi.entityService.findMany("api::item.item", {
-      filters: {
-        contentUpdatedAt: {
-          $null: true,
-        },
-      },
-    });
-
-    for (const item of items) {
-      const result = await strapi.entityService.update(
-        "api::item.item",
-        item.id,
-        {
-          data: {
-            contentUpdatedAt: item.updatedAt,
-          },
-        }
-      );
-
-      if (result) {
-        console.log("updated", item.id);
-      } else {
-        console.error("failed", item.id, result);
-      }
-    }
+    const results = await strapi
+      .service("api::helpers.content-updated-at")
+      .updateNoDate("api::item.item");
 
     ctx.type = "application/json";
-    ctx.body = items;
+    ctx.body = results;
   },
 }));
