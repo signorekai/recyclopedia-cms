@@ -16,24 +16,23 @@ module.exports = createCoreController("api::item.item", ({ strapi }) => ({
       },
     });
 
-    // for (const item of items) {
-    const item = items[0];
-    const result = await strapi.entityService.update(
-      "api::item.item",
-      item.id,
-      {
-        data: {
-          contentUpdatedAt: item.updatedAt,
-        },
-      }
-    );
+    for (const item of items) {
+      const result = await strapi.entityService.update(
+        "api::item.item",
+        item.id,
+        {
+          data: {
+            contentUpdatedAt: item.updatedAt,
+          },
+        }
+      );
 
-    if (result) {
-      console.log("updated", item.id);
-    } else {
-      console.error("failed", item.id, result);
+      if (result) {
+        console.log("updated", item.id);
+      } else {
+        console.error("failed", item.id, result);
+      }
     }
-    // }
 
     ctx.type = "application/json";
     ctx.body = items;
