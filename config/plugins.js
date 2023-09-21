@@ -365,7 +365,7 @@ module.exports = ({ env }) => ({
       contentTypes: [
         {
           name: "api::article.article",
-          fields: ["title", "content", "slug"],
+          fields: ["title", "content", "slug", "publishedAt"],
         },
         {
           name: "api::item.item",
@@ -392,6 +392,7 @@ module.exports = ({ env }) => ({
             "locations",
             "items",
             "resourceTags",
+            "publishedAt",
           ],
         },
         {
