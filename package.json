@@ -26,6 +26,7 @@
     "@strapi/provider-upload-strapi-provider-upload-aws-s3-advanced": "file:providers/upload-strapi-provider-upload-aws-s3-advanced",
     "@strapi/strapi": "4.3.9",
     "better-sqlite3": "7.4.6",
+    "node-fetch": "^2.7.0",
     "patch-package": "^6.4.7",
     "react-is": "^18.0.0",
     "strapi-plugin-fuzzy-search": "^1.9.4",
