@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_layout_topics",
+  "info": {
+    "displayName": "Topics",
+    "icon": "chess-board",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "showForm": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "errorMsg": {
+      "type": "richtext"
+    }
+  }
+}

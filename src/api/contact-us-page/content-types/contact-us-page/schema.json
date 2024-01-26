@@ -22,6 +22,12 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.seo"
+    },
+    "Topics": {
+      "displayName": "Topics",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.topics"
     }
   }
 }
