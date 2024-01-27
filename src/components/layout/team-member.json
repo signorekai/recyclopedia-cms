@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_layout_team_members",
+  "info": {
+    "displayName": "Team Member",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "profilePhoto": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "biography": {
+      "type": "richtext"
+    },
+    "links": {
+      "displayName": "Team Member Links",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.team-member-links"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.team-member-links"
+    }
+  }
+}
